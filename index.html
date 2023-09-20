@@ -153,15 +153,15 @@
                       <script>
                           dir = "./audio/compare_model"
                           exp = {"GT": "gt",
-                                 "BigVGAN": "bigv",
-                                 "VISinger": "visinger",
-                                 "Grad-TTS": "grad",
-                                 "MIDI-Voice (MIDI-driven)": "midi_driven",
-                                 "MIDI-Voice (MIDI-style)": "midi_style",
+                                 "BigVGAN": "sample_vocoder",
+                                 "VISinger": "sample_vi",
+                                 "Grad-TTS": "sample_ddp",
+                                 "MIDI-Voice (MIDI-driven)": "sample_mdp",
+                                 "MIDI-Voice (MIDI-style)": "sample_msp",
                               }
                           audios = {
-                              "샘플명": {"script": "가사",
-                                         "pronun": "영어 발음"},
+                              "샘플명": {"script": "시간이 해결해 주나 봐",
+                                         "pronun": "sigani haegyeolhae juna bwa "},
                           }
                           for(var audio in audios){
                               div = document.getElementById("div2")
